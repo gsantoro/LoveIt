@@ -1,0 +1,17 @@
+
+{{- $donation := .Site.Params.donation -}}
+
+{{- if $donation.enable -}}
+  {{- /* Ko-fi donation */ -}}
+  {{- with $donation.kofi.id -}}
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw("{{ . }}", {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#5cb85c',
+        'floating-chat.donateButton.text-color': '#fff'
+      });
+    </script>
+  {{- end -}}
+{{- end -}}
