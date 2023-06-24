@@ -4,7 +4,7 @@
 {{- if $donation.enable -}}
   {{- /* Ko-fi donation */ -}}
   {{- with $donation.kofi.id -}}
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script type="text/javascript" src='/lib/kofi/kofi.js'></script>
     <script>
       kofiWidgetOverlay.draw("{{ . }}", {
         'type': 'floating-chat',
