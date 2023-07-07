@@ -12,7 +12,8 @@ linkedin:
   Prefix: https://linkedin.com/in/
   Title: LinkedIn
   Icon:
-    Class: fab fa-linkedin fa-fw
+    # Class: fab fa-linkedin fa-fw
+    Class: fa-brands fa-linkedin-in
 
 # 003: Twitter
 twitter:
@@ -124,7 +125,8 @@ reddit:
   Prefix: https://www.reddit.com/user/
   Title: Reddit
   Icon:
-    Class: fab fa-reddit fa-fw
+    # Class: fab fa-reddit fa-fw
+    Class: fa-brands fa-reddit-alien
 
 # 017: CodePen
 codepen:
