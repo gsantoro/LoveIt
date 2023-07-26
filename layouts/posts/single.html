@@ -70,7 +70,8 @@
         {{- end -}}
         {{- with $image -}}
             <div class="featured-image">
-                {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/img.html" -}}
+                {{- /* Featured image with default size 1600/900 */ -}}
+                {{- dict "Src" . "Title" $.Description "Resources" $.Resources "Width" 1600 "Height" 900 | partial "plugin/img.html" -}}
             </div>
         {{- end -}}
 
